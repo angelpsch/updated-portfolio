@@ -1,0 +1,54 @@
+@charset "utf-8";
+@import "../node_modules/bulma/bulma.sass";
+@import url("https://use.typekit.net/zfn2ddo.css");
+
+// Variables
+$dark-pink: #BF5950; 
+$light-grey: #BDBFBE; 
+$light-pink: #D9B4B7; 
+$dark-green: #548C82; 
+$teal: #52AEA0; 
+$dark-blue: #214E69;
+$blue-grey: #627D8E; 
+$coral: #F28980; 
+$dark-red: #720202;
+$lightish-grey: #595959; 
+
+// Bulma Variables
+$navbar-background-color: $grey-darker;
+$body-background-color: $lightish-grey;
+$family-primary: freight-sans-pro, sans-serif;
+$navbar-item-hover-color: $teal;  
+$navbar-item-hover-background-color: $lightish-grey;
+
+// Custom SCSS
+.navbar {
+
+     h1 {
+        font-family: lust-script-display, sans-serif;
+        font-weight: 400;
+        color: $dark-pink; 
+        margin: 1rem 0  1rem 0.3em; 
+        line-height: 50px;
+        font-size: 4em;
+        -webkit-text-stroke: 1px lighten($color: $dark-pink, $amount: 10); 
+    }
+    .navbar-end a {
+        margin-right: 1em;
+        color: $coral;
+        font-family: $family-primary;
+        font-size: 1.5em;
+    }
+}
+
+
+// Import only what you need from Bulma
+@import "../node_modules/bulma/sass/utilities/_all.sass";
+@import "../node_modules/bulma/sass/base/_all.sass";
+@import "../node_modules/bulma/sass/elements/button.sass";
+@import "../node_modules/bulma/sass/elements/container.sass";
+@import "../node_modules/bulma/sass/elements/title.sass";
+@import "../node_modules/bulma/sass/form/_all.sass";
+@import "../node_modules/bulma/sass/components/navbar.sass";
+@import "../node_modules/bulma/sass/layout/hero.sass";
+@import "../node_modules/bulma/sass/layout/section.sass";
