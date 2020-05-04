@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="https://use.typekit.net/zfn2ddo.css">
     </head>
     <body>
-
+      <div id="wrapper">
       <nav class="navbar" role="navigation" aria-label="main navigation">
         <a href="../../index.html" class="navbar-item is-hidden-tablet-only" >
           <h1 id="nameLogo">Angel <br>Schultz</h1>
@@ -63,8 +63,8 @@
 
     <!--CONTENT FOR PAGE-->
 
-    <div class="container" id="contact-page">
-    <form method="POST" action="mailto:angel.p.schultz@gmail.com" id="contact-form">
+    <div class="container box" id="contact-page">
+    <form id="contact-form">
         <h1 class="title" id="contact-title">Contact Me!
         <p class="help">Hit the "Submit" button when finished or "Cancel" to clear the fields.</p>
         </h1>
@@ -99,7 +99,7 @@
 
   <div class="field is-grouped is-grouped-centered ">
     <p class="control">
-      <button class="button is-medium is-rounded" id="submit" >Submit
+      <button class="button is-medium is-rounded" type="submit" id="submit">Submit
       </button>
     </p>
     <p class="control">
@@ -108,12 +108,32 @@
     </p>
   </div>
 </form>
-<div id="contact-info" class="content">
+<section id="contact-info" class="section">
     <p class="title">-or-</p>
-    <p class="subtitle">Email:</p>
-</div>
+    <p class="subtitle">Email: <a href="mailto:angel.p.schultz@gmail.com">angel.p.schultz@gmail.com</a></p>
+    <p class="subtitle">Phone: <a href="tel:3198304230">(319) 830-4230</a></p>
+</section>
+ </div> 
 
- </div>
+<!--end content-->
+      </div>
+      <!--end wrapper-->
+<footer class="footer is-relative">
+  <h1 id="nameLogo">Angel <br>Schultz</h1>
+  <p class="subtitle">© 2020 Angel Schultz</p>
+  <p>Email: <a href="mailto:angel.p.schultz@gmail.com">angel.p.schultz@gmail.com</a></p>
+  <p>Phone: <a href="tel:3198304230">(319) 830-4230</a></p>
+  <div class="navbar-menu">
+    <a class='navbar-item ' href="../../index.html">Home</a>
+    <a class='navbar-item vl' href="resume.html">Resume</a>
+    <a class='navbar-item vl' href="portfolio.html">Portfolio</a>
+    <a class='navbar-item vl' href="contact.html">Contact</a>
+  </div>
+</div>
+</footer>
+
+
+
           <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
           <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script> 
           <script src="./../../mybulma/js/script.js"></script>

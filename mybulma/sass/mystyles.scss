@@ -25,13 +25,22 @@ $navbar-item-hover-background-color: $lightish-grey;
 $navbar-burger-color: $coral;
 $navbar-item-active-color: $teal;
 $title-family: fairwater-script, sans-serif; 
+$button-background-color: $dark-pink;
+$button-color: $teal;  
+$button-hover-color: lighten($color: $teal, $amount: 10); 
+$button-family: voltage, sans-serif; 
+$button-border-color: none; 
+$button-hover-border-color: none;
+$title-color: $dark-pink; 
+$link-hover: $coral; 
 
 
+// Boilerplate
+#wrapper {
+    height: $desktop;
+}
 
-// Index
-.navbar {
-    
-     #nameLogo {
+#nameLogo {
         font-family: lust-script-display, sans-serif;
         font-weight: 400;
         color: $dark-pink; 
@@ -40,7 +49,9 @@ $title-family: fairwater-script, sans-serif;
         font-size: 4em;
         -webkit-text-stroke: 1px lighten($color: $dark-pink, $amount: 10); 
     }
-    
+
+
+.navbar {
     .navbar-end a {
         margin-right: 1em;
         color: $coral;
@@ -90,34 +101,109 @@ $title-family: fairwater-script, sans-serif;
     $navbar-item-active-color: $teal;
 }
 
+.footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: $grey-darker;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em; 
+   .subtitle, p {
+    color: lighten($color: $lightish-grey, $amount: 10);
+   }
+    #nameLogo {
+        font-size: 2em;
+        line-height: 26px;
+    }
+    a {
+        color: $dark-pink;
+    }
+    .navbar-menu {
+      margin: auto 0;
+      padding: 1em;
+      width: 20%;
+      
+    }
+}
 
-
+.vl {
+    border-left: 1px solid $dark-pink;
+}
 
 // Contact 
-
 #contact-page {
-   
+   background-color: $teal;
+   padding-top: 0.2em;
+   margin-top: 2em;  
     #contact-title {
-    margin-top: 1em; 
+    margin-top: 0.5em; 
+    font-size: 4em;
+    color: $dark-pink;
+    
     .help {
         font-family: $family-primary;
+        font-size: 20px;
     }
 }
     #contact-form {
         width: 50%;
         margin: auto;
-        .button  {
-            background-color: $teal;
+    
+    }
+    #contact-info {
+        text-align: center;
+        
+        .subtitle a {
             color: $dark-pink;
-            font-family: magasin, sans-serif;
-            -webkit-text-stroke: 1px darken($color: $dark-pink, $amount: 10); 
-            border: none; 
-            :hover {
-                background-color: $lightish-grey;
-            }
+            $link-hover: $teal; 
         }
     }
    
+}
+
+// Resume
+
+#resume-info {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 2em; 
+    .menu-label {
+        font-weight: 600;
+        padding-bottom: 0;
+        margin-bottom: 0.1em; 
+        font-size: 1.5em; 
+        color: lighten($color: $dark-pink, $amount: 5);
+    }
+    .panel-tabs {
+        background-color: $teal;
+        margin: 0 auto;
+        margin-bottom: 0;
+        border: none;
+        width: 50%;
+         a {
+            color: $dark-pink;
+            font-size: 1em;
+            font-size: large; 
+            font-family: $family-primary;
+            font-weight: 600;
+            :hover {
+                color: $coral;
+            }
+         }
+    }
+    .panel-block {
+        background-color: $teal;
+        width: 50%;
+        margin: 0 auto;
+        margin-top: -0.5em;
+        padding: 1em;
+        p {
+            color: white;
+            font-family: frieght-sans-pro, sans-serif;
+            font-weight: 300;
+        }
+    }
 }
 
 // Mobile View Media Query
@@ -133,10 +219,17 @@ $title-family: fairwater-script, sans-serif;
     #contact-page{
         #contact-form {
         width: 80%; 
-        
     }
+        #contact-title {
+            font-size: 3em;
+            .help {
+                font-size: 0.35em;
+            }
+        }
     }
-    
+    #wrapper {
+        height: $tablet;
+    }
 } 
 
 

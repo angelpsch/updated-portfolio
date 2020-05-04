@@ -7114,7 +7114,10 @@ label.panel-block {
   background-color: #fafafa;
   padding: 3rem 1.5rem 6rem; }
 
-.navbar #nameLogo {
+#wrapper {
+  height: 1024px; }
+
+#nameLogo {
   font-family: lust-script-display, sans-serif;
   font-weight: 400;
   color: #BF5950;
@@ -7157,22 +7160,82 @@ label.panel-block {
   font-family: freight-sans-condensed-pro, sans-serif;
   font-size: 1.5em; }
 
-#contact-page #contact-title {
-  margin-top: 1em; }
-  #contact-page #contact-title .help {
-    font-family: freight-sans-condensed-pro, sans-serif; }
+.footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  background-color: #363636;
+  text-align: center;
+  padding-top: 1em;
+  padding-bottom: 1em; }
+  .footer .subtitle, .footer p {
+    color: #737373; }
+  .footer #nameLogo {
+    font-size: 2em;
+    line-height: 26px; }
+  .footer a {
+    color: #BF5950; }
+  .footer .navbar-menu {
+    margin: auto 0;
+    padding: 1em;
+    width: 20%; }
 
-#contact-page #contact-form {
-  width: 50%;
-  margin: auto; }
-  #contact-page #contact-form .button {
+.vl {
+  border-left: 1px solid #BF5950; }
+
+#contact-page {
+  background-color: #52AEA0;
+  padding-top: 0.2em;
+  margin-top: 2em; }
+  #contact-page #contact-title {
+    margin-top: 0.5em;
+    font-size: 4em;
+    color: #BF5950; }
+    #contact-page #contact-title .help {
+      font-family: freight-sans-condensed-pro, sans-serif;
+      font-size: 20px; }
+  #contact-page #contact-form {
+    width: 50%;
+    margin: auto; }
+  #contact-page #contact-info {
+    text-align: center; }
+    #contact-page #contact-info .subtitle a {
+      color: #BF5950; }
+
+#resume-info {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 2em; }
+  #resume-info .menu-label {
+    font-weight: 600;
+    padding-bottom: 0;
+    margin-bottom: 0.1em;
+    font-size: 1.5em;
+    color: #c66b63; }
+  #resume-info .panel-tabs {
     background-color: #52AEA0;
-    color: #BF5950;
-    font-family: magasin, sans-serif;
-    -webkit-text-stroke: 1px #a1433b;
-    border: none; }
-    #contact-page #contact-form .button :hover {
-      background-color: #595959; }
+    margin: 0 auto;
+    margin-bottom: 0;
+    border: none;
+    width: 50%; }
+    #resume-info .panel-tabs a {
+      color: #BF5950;
+      font-size: 1em;
+      font-size: large;
+      font-family: freight-sans-condensed-pro, sans-serif;
+      font-weight: 600; }
+      #resume-info .panel-tabs a :hover {
+        color: #F28980; }
+  #resume-info .panel-block {
+    background-color: #52AEA0;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: -0.5em;
+    padding: 1em; }
+    #resume-info .panel-block p {
+      color: white;
+      font-family: frieght-sans-pro, sans-serif;
+      font-weight: 300; }
 
 @media screen and (max-width: 756px) {
   .navbar #nameLogo {
@@ -7180,7 +7243,13 @@ label.panel-block {
   .navbar .navbar-burger {
     margin: 0 auto; }
   #contact-page #contact-form {
-    width: 80%; } }
+    width: 80%; }
+  #contact-page #contact-title {
+    font-size: 3em; }
+    #contact-page #contact-title .help {
+      font-size: 0.35em; }
+  #wrapper {
+    height: 769px; } }
 
 @keyframes spinAround {
   from {
@@ -7489,7 +7558,7 @@ a {
   a strong {
     color: currentColor; }
   a:hover {
-    color: #363636; }
+    color: #F28980; }
 
 code {
   background-color: whitesmoke;
@@ -8324,11 +8393,12 @@ a.has-text-danger:hover, a.has-text-danger:focus {
   position: relative !important; }
 
 .button {
-  background-color: white;
-  border-color: #dbdbdb;
+  background-color: #BF5950;
+  border-color: none;
   border-width: 1px;
-  color: #363636;
+  color: #52AEA0;
   cursor: pointer;
+  font-family: voltage, sans-serif;
   justify-content: center;
   padding-bottom: calc(0.5em - 1px);
   padding-left: 1em;
@@ -8351,8 +8421,8 @@ a.has-text-danger:hover, a.has-text-danger:focus {
     margin-left: calc(-0.5em - 1px);
     margin-right: calc(-0.5em - 1px); }
   .button:hover, .button.is-hovered {
-    border-color: #b5b5b5;
-    color: #363636; }
+    border-color: none;
+    color: #75beb3; }
   .button:focus, .button.is-focused {
     border-color: #3273dc;
     color: #363636; }
@@ -9254,7 +9324,7 @@ a.has-text-danger:hover, a.has-text-danger:focus {
     vertical-align: middle; }
 
 .title {
-  color: #363636;
+  color: #BF5950;
   font-family: fairwater-script, sans-serif;
   font-size: 2rem;
   font-weight: 600;
