@@ -13,18 +13,25 @@ $blue-grey: #627D8E;
 $coral: #F28980; 
 $dark-red: #720202;
 $lightish-grey: #595959; 
+$mobile-view: 756px;
+$tablet-view: 1023px;
 
 // Bulma Variables
 $navbar-background-color: $grey-darker;
-$body-background-color: $lightish-grey;
-$family-primary: freight-sans-pro, sans-serif;
+$body-background-color: $dark-pink;
+$family-primary: freight-sans-condensed-pro, sans-serif;
 $navbar-item-hover-color: $teal;  
 $navbar-item-hover-background-color: $lightish-grey;
+$navbar-burger-color: $coral;
+$navbar-item-active-color: $teal;
+$title-family: fairwater-script, sans-serif; 
 
-// Custom SCSS
+
+
+// Index
 .navbar {
-
-     h1 {
+    
+     #nameLogo {
         font-family: lust-script-display, sans-serif;
         font-weight: 400;
         color: $dark-pink; 
@@ -33,6 +40,7 @@ $navbar-item-hover-background-color: $lightish-grey;
         font-size: 4em;
         -webkit-text-stroke: 1px lighten($color: $dark-pink, $amount: 10); 
     }
+    
     .navbar-end a {
         margin-right: 1em;
         color: $coral;
@@ -40,6 +48,96 @@ $navbar-item-hover-background-color: $lightish-grey;
         font-size: 1.5em;
     }
 }
+
+#mobile {
+    #navMenu a {
+        color: $coral;
+        font-family: $family-primary;
+        text-align: center;
+        font-size: 1.25em;
+    }
+    
+    .navbar-burger {
+        color: $coral;
+    }
+         
+    .is-active {
+        color: $teal; 
+    }
+    $navbar-item-active-color: $teal;  
+    $navbar-item-hover-color: $teal;
+     
+}
+
+#tablet {
+    #tabletLogo {
+        font-family: lust-script-display, sans-serif;
+        font-weight: 400;
+        color: $dark-pink; 
+        margin: 1rem;  
+        margin-top: 0.5em;
+        line-height: 38px;
+        font-size: 3em;
+        -webkit-text-stroke: 1px lighten($color: $dark-pink, $amount: 10); 
+    }
+    .navbar-item { 
+        margin-right: 1em;
+        color: $coral;
+        font-family: $family-primary;
+        font-size: 1.5em;
+    }
+    $navbar-item-hover-color: $teal;
+    $navbar-item-active-color: $teal;
+}
+
+
+
+
+// Contact 
+
+#contact-page {
+   
+    #contact-title {
+    margin-top: 1em; 
+    .help {
+        font-family: $family-primary;
+    }
+}
+    #contact-form {
+        width: 50%;
+        margin: auto;
+        .button  {
+            background-color: $teal;
+            color: $dark-pink;
+            font-family: magasin, sans-serif;
+            -webkit-text-stroke: 1px darken($color: $dark-pink, $amount: 10); 
+            border: none; 
+            :hover {
+                background-color: $lightish-grey;
+            }
+        }
+    }
+   
+}
+
+// Mobile View Media Query
+@media screen and (max-width: $mobile-view) {
+    .navbar {
+        #nameLogo {
+            text-align: center;
+        }
+        .navbar-burger {
+            margin: 0 auto;
+        }
+    }
+    #contact-page{
+        #contact-form {
+        width: 80%; 
+        
+    }
+    }
+    
+} 
 
 
 // Import only what you need from Bulma

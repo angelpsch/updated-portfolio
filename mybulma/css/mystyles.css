@@ -7114,7 +7114,7 @@ label.panel-block {
   background-color: #fafafa;
   padding: 3rem 1.5rem 6rem; }
 
-.navbar h1 {
+.navbar #nameLogo {
   font-family: lust-script-display, sans-serif;
   font-weight: 400;
   color: #BF5950;
@@ -7126,8 +7126,61 @@ label.panel-block {
 .navbar .navbar-end a {
   margin-right: 1em;
   color: #F28980;
-  font-family: freight-sans-pro, sans-serif;
+  font-family: freight-sans-condensed-pro, sans-serif;
   font-size: 1.5em; }
+
+#mobile #navMenu a {
+  color: #F28980;
+  font-family: freight-sans-condensed-pro, sans-serif;
+  text-align: center;
+  font-size: 1.25em; }
+
+#mobile .navbar-burger {
+  color: #F28980; }
+
+#mobile .is-active {
+  color: #52AEA0; }
+
+#tablet #tabletLogo {
+  font-family: lust-script-display, sans-serif;
+  font-weight: 400;
+  color: #BF5950;
+  margin: 1rem;
+  margin-top: 0.5em;
+  line-height: 38px;
+  font-size: 3em;
+  -webkit-text-stroke: 1px #cd7c75; }
+
+#tablet .navbar-item {
+  margin-right: 1em;
+  color: #F28980;
+  font-family: freight-sans-condensed-pro, sans-serif;
+  font-size: 1.5em; }
+
+#contact-page #contact-title {
+  margin-top: 1em; }
+  #contact-page #contact-title .help {
+    font-family: freight-sans-condensed-pro, sans-serif; }
+
+#contact-page #contact-form {
+  width: 50%;
+  margin: auto; }
+  #contact-page #contact-form .button {
+    background-color: #52AEA0;
+    color: #BF5950;
+    font-family: magasin, sans-serif;
+    -webkit-text-stroke: 1px #a1433b;
+    border: none; }
+    #contact-page #contact-form .button :hover {
+      background-color: #595959; }
+
+@media screen and (max-width: 756px) {
+  .navbar #nameLogo {
+    text-align: center; }
+  .navbar .navbar-burger {
+    margin: 0 auto; }
+  #contact-page #contact-form {
+    width: 80%; } }
 
 @keyframes spinAround {
   from {
@@ -7391,7 +7444,7 @@ th {
     text-align: left; }
 
 html {
-  background-color: #595959;
+  background-color: #BF5950;
   font-size: 16px;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -7958,7 +8011,7 @@ a.has-text-danger:hover, a.has-text-danger:focus {
   font-weight: 700 !important; }
 
 .is-family-primary {
-  font-family: freight-sans-pro, sans-serif !important; }
+  font-family: freight-sans-condensed-pro, sans-serif !important; }
 
 .is-family-secondary {
   font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif !important; }
@@ -9202,6 +9255,7 @@ a.has-text-danger:hover, a.has-text-danger:focus {
 
 .title {
   color: #363636;
+  font-family: fairwater-script, sans-serif;
   font-size: 2rem;
   font-weight: 600;
   line-height: 1.125; }
@@ -10554,7 +10608,7 @@ body.has-navbar-fixed-bottom {
   overflow-y: hidden; }
 
 .navbar-burger {
-  color: #4a4a4a;
+  color: #F28980;
   cursor: pointer;
   display: block;
   height: 3.25rem;
@@ -10834,7 +10888,7 @@ a.navbar-item,
     padding-bottom: 5.25rem; }
   a.navbar-item.is-active,
   .navbar-link.is-active {
-    color: #0a0a0a; }
+    color: #52AEA0; }
   a.navbar-item.is-active:not(:focus):not(:hover),
   .navbar-link.is-active:not(:focus):not(:hover) {
     background-color: transparent; }
