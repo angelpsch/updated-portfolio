@@ -20,6 +20,7 @@ $tablet-view: 1023px;
 $navbar-background-color: $grey-darker;
 $body-background-color: $dark-pink;
 $family-primary: freight-sans-condensed-pro, sans-serif;
+$family-secondary: frieght-sans-pro, sans-serif; 
 $navbar-item-hover-color: $teal;  
 $navbar-item-hover-background-color: $lightish-grey;
 $navbar-burger-color: $coral;
@@ -129,17 +130,20 @@ $link-hover: $coral;
 
 .vl {
     border-left: 1px solid $dark-pink;
+    height: fit-content;
 }
 
 // Contact 
 #contact-page {
    background-color: $teal;
+   width: 100%;
+   margin: auto;
    padding-top: 0.2em;
    margin-top: 2em;  
     #contact-title {
     margin-top: 0.5em; 
     font-size: 4em;
-    color: $dark-pink;
+    color: $grey-darker;
     
     .help {
         font-family: $family-primary;
@@ -149,11 +153,22 @@ $link-hover: $coral;
     #contact-form {
         width: 50%;
         margin: auto;
-    
+        margin-top: 1em; 
+        padding: 1em; 
+        
+        .button {
+            color: lighten($color: $teal, $amount: 10);
+        }
     }
     #contact-info {
         text-align: center;
         
+        width: 50%;
+        margin: auto; 
+        .title, .subtitle {
+            padding: 0; 
+            margin: 0;
+        }
         .subtitle a {
             color: $dark-pink;
             $link-hover: $teal; 
@@ -168,49 +183,202 @@ $link-hover: $coral;
     width: 80%;
     margin: 0 auto;
     margin-top: 2em; 
+    
+   
     .menu-label {
         font-weight: 600;
         padding-bottom: 0;
         margin-bottom: 0.1em; 
         font-size: 1.5em; 
-        color: lighten($color: $dark-pink, $amount: 5);
+        color: lighten($color: $dark-pink, $amount: 20);
     }
     .panel-tabs {
         background-color: $teal;
         margin: 0 auto;
         margin-bottom: 0;
         border: none;
-        width: 50%;
+        width: 100%;
+        
          a {
-            color: $dark-pink;
-            font-size: 1em;
-            font-size: large; 
-            font-family: $family-primary;
-            font-weight: 600;
+            color: $grey-darker; 
+            font-size: 180%; 
+            font-family: voltage, sans-serif;
+            font-weight: 400;
             :hover {
                 color: $coral;
             }
+            
          }
+         .is-active {
+            color: lighten($color: $dark-pink, $amount: 5);
+        }
     }
     .panel-block {
         background-color: $teal;
-        width: 50%;
+        width: 100%;
+        height: 100%;
         margin: 0 auto;
         margin-top: -0.5em;
-        padding: 1em;
+    
         p {
-            color: white;
-            font-family: frieght-sans-pro, sans-serif;
-            font-weight: 300;
+            
+            font-family: $family-secondary;
+            font-weight: 500;
+            padding: 2em; 
+        }
+        .columns {
+            margin:  0 auto;
+            width: 80%;
+            padding: 0.5em; 
+            .column {
+                padding-top: 0;
+                margin-top: 0; 
+            }
+            .section {
+                margin: 0;
+                padding: 1em;
+               
+                .icon {
+                    height: auto;
+                    width: 1.5em;
+                    color: lighten($color: $dark-pink, $amount: 5);
+                    stroke: 1px lighten($color: $dark-pink, $amount: 10); 
+                 
+                }
+                .progress {
+                    margin: auto; 
+                    margin-left: 0.5em; 
+                }
+                
+            }
+        }
+        .tile {
+          
+            margin:  0 auto;
+            padding: 1em;
+            p {
+                padding: 0;
+                margin: 0;
+            }
+            .title {
+                font-family: voltage, sans-serif;
+                font-weight: 300;
+                color: lighten($color: $dark-pink, $amount: 5);
+            }
+            .subtitle {
+                font-family: $family-secondary;
+                font-weight: 500;
+                font-size: 1.1em;
+                font-style: italic;
+            }
+        }
+        .box {
+            width: 100%;
+            background-color: lighten($color: $teal, $amount: 15);
+           
         }
     }
+    
 }
+  
+    #resume-mobile {
+        background-color: $teal;
+        width: inherit;
+        margin: 0 auto;
+        .dropdown { 
+            
+            .button {
+                background-color: $teal;
+                color: $grey-darker; 
+                font-size: 180%; 
+                font-family: voltage, sans-serif;
+                font-weight: 400;
+                span {
+                width: fit-content;
+                margin: auto;
+                color: $dark-pink;
+                .is-active {
+                    color: $grey-darker;
+                }
+                
+            }
+                .icon {
+                    padding-left: 0.5rem;
+                }
+            }
+                
+        }
+    }
+
+    #links {
+        width: 80%;
+        margin: auto;
+        margin-top: 2em; 
+        background-color: $teal;
+        text-align: center;
+        h1 {
+           
+            color: $grey-darker;
+        }
+        .container {
+            display: inline-flex;
+            margin: auto;
+            .is-flex{ 
+                margin-left: 1em;
+                .icon {
+                color: lighten($color: $dark-pink, $amount: 5);
+                :hover {
+                
+                    color: lighten($color: $dark-pink, $amount: 10);
+                
+                
+             }
+               
+            }
+            .subtitle {
+                margin: auto;
+                margin-left: 0.5em;
+            }
+            
+            }
+            
+         
+        }
+    }
+
+    //index 
+    .hero {
+        background-color: $teal;
+        
+        .title {
+            font-size: 5em; 
+            
+        }
+        .button {
+            color: lighten($color: $teal, $amount: 10);
+        }
+        
+    }
+
+  //portfolio
+  #portfolio-content {
+    background-color: $teal;
+    width: 90%;
+    margin: auto;
+    margin-top: 1em; 
+    
+}
+
+
+
 
 // Mobile View Media Query
 @media screen and (max-width: $mobile-view) {
     .navbar {
         #nameLogo {
             text-align: center;
+            font-size: 3em;
+            line-height: 0.8em;
         }
         .navbar-burger {
             margin: 0 auto;
@@ -229,8 +397,72 @@ $link-hover: $coral;
     }
     #wrapper {
         height: $tablet;
+        margin-bottom: 20em;
     }
-} 
+    
+    #resume-info {
+        
+        .panel-block {
+            overflow: auto;
+            width: 95%;
+            .tile {
+                padding: 0.3em; 
+                margin: 0.3em;
+               
+            }
+            .panel-block {
+                .columns {
+                    overflow: scroll;
+                    .column {
+                       overflow: scroll;
+                       padding-top: 0; 
+                       margin-top: 0; 
+                       .section {
+                           padding-top: 0.5em; 
+                           margin:0; 
+                       }
+                    }
+                }
+            }
+            
+        }
+    }
+    .hero {
+        .container {
+            .button {
+           
+           font-size: 100%;
+        }
+        }
+        
+    }
+}
+  
+
+
+@media screen and (max-width: $tablet-view) {
+    #resume-info {
+        #resume-mobile {
+            width: 95%;
+        }
+        .panel-block {
+            width: 95%;
+            .columns {
+                width: 100%;
+            }
+            .tile {
+            
+                padding: 0.4em; 
+            }
+        }
+        
+    }
+    .hero {
+        .button {
+            margin-bottom: 1em;
+        }
+    }
+}
 
 
 // Import only what you need from Bulma

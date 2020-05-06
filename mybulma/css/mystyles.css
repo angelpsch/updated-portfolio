@@ -7181,24 +7181,36 @@ label.panel-block {
     width: 20%; }
 
 .vl {
-  border-left: 1px solid #BF5950; }
+  border-left: 1px solid #BF5950;
+  height: fit-content; }
 
 #contact-page {
   background-color: #52AEA0;
+  width: 100%;
+  margin: auto;
   padding-top: 0.2em;
   margin-top: 2em; }
   #contact-page #contact-title {
     margin-top: 0.5em;
     font-size: 4em;
-    color: #BF5950; }
+    color: #363636; }
     #contact-page #contact-title .help {
       font-family: freight-sans-condensed-pro, sans-serif;
       font-size: 20px; }
   #contact-page #contact-form {
     width: 50%;
-    margin: auto; }
+    margin: auto;
+    margin-top: 1em;
+    padding: 1em; }
+    #contact-page #contact-form .button {
+      color: #75beb3; }
   #contact-page #contact-info {
-    text-align: center; }
+    text-align: center;
+    width: 50%;
+    margin: auto; }
+    #contact-page #contact-info .title, #contact-page #contact-info .subtitle {
+      padding: 0;
+      margin: 0; }
     #contact-page #contact-info .subtitle a {
       color: #BF5950; }
 
@@ -7211,35 +7223,127 @@ label.panel-block {
     padding-bottom: 0;
     margin-bottom: 0.1em;
     font-size: 1.5em;
-    color: #c66b63; }
+    color: #daa09b; }
   #resume-info .panel-tabs {
     background-color: #52AEA0;
     margin: 0 auto;
     margin-bottom: 0;
     border: none;
-    width: 50%; }
+    width: 100%; }
     #resume-info .panel-tabs a {
-      color: #BF5950;
-      font-size: 1em;
-      font-size: large;
-      font-family: freight-sans-condensed-pro, sans-serif;
-      font-weight: 600; }
+      color: #363636;
+      font-size: 180%;
+      font-family: voltage, sans-serif;
+      font-weight: 400; }
       #resume-info .panel-tabs a :hover {
         color: #F28980; }
+    #resume-info .panel-tabs .is-active {
+      color: #c66b63; }
   #resume-info .panel-block {
     background-color: #52AEA0;
-    width: 50%;
+    width: 100%;
+    height: 100%;
     margin: 0 auto;
-    margin-top: -0.5em;
-    padding: 1em; }
+    margin-top: -0.5em; }
     #resume-info .panel-block p {
-      color: white;
       font-family: frieght-sans-pro, sans-serif;
-      font-weight: 300; }
+      font-weight: 500;
+      padding: 2em; }
+    #resume-info .panel-block .columns {
+      margin: 0 auto;
+      width: 80%;
+      padding: 0.5em; }
+      #resume-info .panel-block .columns .column {
+        padding-top: 0;
+        margin-top: 0; }
+      #resume-info .panel-block .columns .section {
+        margin: 0;
+        padding: 1em; }
+        #resume-info .panel-block .columns .section .icon {
+          height: auto;
+          width: 1.5em;
+          color: #c66b63;
+          stroke: 1px #cd7c75; }
+        #resume-info .panel-block .columns .section .progress {
+          margin: auto;
+          margin-left: 0.5em; }
+    #resume-info .panel-block .tile {
+      margin: 0 auto;
+      padding: 1em; }
+      #resume-info .panel-block .tile p {
+        padding: 0;
+        margin: 0; }
+      #resume-info .panel-block .tile .title {
+        font-family: voltage, sans-serif;
+        font-weight: 300;
+        color: #c66b63; }
+      #resume-info .panel-block .tile .subtitle {
+        font-family: frieght-sans-pro, sans-serif;
+        font-weight: 500;
+        font-size: 1.1em;
+        font-style: italic; }
+    #resume-info .panel-block .box {
+      width: 100%;
+      background-color: #86c6bd; }
+
+#resume-mobile {
+  background-color: #52AEA0;
+  width: inherit;
+  margin: 0 auto; }
+  #resume-mobile .dropdown .button {
+    background-color: #52AEA0;
+    color: #363636;
+    font-size: 180%;
+    font-family: voltage, sans-serif;
+    font-weight: 400; }
+    #resume-mobile .dropdown .button span {
+      width: fit-content;
+      margin: auto;
+      color: #BF5950; }
+      #resume-mobile .dropdown .button span .is-active {
+        color: #363636; }
+    #resume-mobile .dropdown .button .icon {
+      padding-left: 0.5rem; }
+
+#links {
+  width: 80%;
+  margin: auto;
+  margin-top: 2em;
+  background-color: #52AEA0;
+  text-align: center; }
+  #links h1 {
+    color: #363636; }
+  #links .container {
+    display: inline-flex;
+    margin: auto; }
+    #links .container .is-flex {
+      margin-left: 1em; }
+      #links .container .is-flex .icon {
+        color: #c66b63; }
+        #links .container .is-flex .icon :hover {
+          color: #cd7c75; }
+      #links .container .is-flex .subtitle {
+        margin: auto;
+        margin-left: 0.5em; }
+
+.hero {
+  background-color: #52AEA0; }
+  .hero .title {
+    font-size: 5em; }
+  .hero .button {
+    color: #75beb3; }
+
+#portfolio-content {
+  background-color: #52AEA0;
+  width: 90%;
+  margin: auto;
+  margin-top: 1em; }
 
 @media screen and (max-width: 756px) {
   .navbar #nameLogo {
-    text-align: center; }
+    text-align: center;
+    font-size: 3em;
+    line-height: 0.8em; }
   .navbar .navbar-burger {
     margin: 0 auto; }
   #contact-page #contact-form {
@@ -7249,7 +7353,37 @@ label.panel-block {
     #contact-page #contact-title .help {
       font-size: 0.35em; }
   #wrapper {
-    height: 769px; } }
+    height: 769px;
+    margin-bottom: 20em; }
+  #resume-info .panel-block {
+    overflow: auto;
+    width: 95%; }
+    #resume-info .panel-block .tile {
+      padding: 0.3em;
+      margin: 0.3em; }
+    #resume-info .panel-block .panel-block .columns {
+      overflow: scroll; }
+      #resume-info .panel-block .panel-block .columns .column {
+        overflow: scroll;
+        padding-top: 0;
+        margin-top: 0; }
+        #resume-info .panel-block .panel-block .columns .column .section {
+          padding-top: 0.5em;
+          margin: 0; }
+  .hero .container .button {
+    font-size: 100%; } }
+
+@media screen and (max-width: 1023px) {
+  #resume-info #resume-mobile {
+    width: 95%; }
+  #resume-info .panel-block {
+    width: 95%; }
+    #resume-info .panel-block .columns {
+      width: 100%; }
+    #resume-info .panel-block .tile {
+      padding: 0.4em; }
+  .hero .button {
+    margin-bottom: 1em; } }
 
 @keyframes spinAround {
   from {
@@ -8083,7 +8217,7 @@ a.has-text-danger:hover, a.has-text-danger:focus {
   font-family: freight-sans-condensed-pro, sans-serif !important; }
 
 .is-family-secondary {
-  font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif !important; }
+  font-family: frieght-sans-pro, sans-serif !important; }
 
 .is-family-sans-serif {
   font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif !important; }

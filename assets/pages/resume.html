@@ -63,27 +63,133 @@
     </nav>
        
   <!--content-->
+
+  
     <div class="panel is-shadowless" id="resume-info">
-      <p class="panel-tabs box">
+      <!--DESKTOP-->
+      <p class="panel-tabs box is-hidden-touch">
         <a class="is-active" href="#summary">Summary</a>
         <a href="#education">Education</a>
         <a href="#experience">Experience</a>
         <a href="#skills">Technical Skills</a>
       </p>
-      <div class="panel-block box is-shadowless" id="summary">
-        <p class="subtitle">Passionate entry-level web developer with 5+ years of customer service experience and extensive understanding of Adobe Creative and Microsoft Office Suites. Adept at implementing a responsive, user-focused design in website development. Foundational knowledge of creating and maintaining relational databases. Increased productivity by advising technological upgrades at Garrison Law Office. Simplified employee tracking with the creation and implementation of Excel spreadsheets and Microsoft Flow processes and tasks at Titan Protection & Consulting.</p>
-      </div>
-      <div class="panel-block box is-shadowless is-invisible"  id="education">
-        <p class="subtitle">Education</p>
-      </div>
-      <div class="panel-block box is-shadowless is-invisible" id="experience">
-        <p class="subtitle">Passionate entry-level web developer with 5+ years of customer service experience and extensive understanding of Adobe Creative and Microsoft Office Suites. Adept at implementing a responsive, user-focused design in website development. Foundational knowledge of creating and maintaining relational databases. Increased productivity by advising technological upgrades at Garrison Law Office. Simplified employee tracking with the creation and implementation of Excel spreadsheets and Microsoft Flow processes and tasks at Titan Protection & Consulting.</p>
-      </div>
-      <div class="panel-block box is-shadowless is-invisible"  id="skills">
-        <p class="subtitle">Passionate entry-level web developer with 5+ years of customer service experience and extensive understanding of Adobe Creative and Microsoft Office Suites. Adept at implementing a responsive, user-focused design in website development. Foundational knowledge of creating and maintaining relational databases. Increased productivity by advising technological upgrades at Garrison Law Office. Simplified employee tracking with the creation and implementation of Excel spreadsheets and Microsoft Flow processes and tasks at Titan Protection & Consulting.</p>
+      <!--MOBILE-->
+    <div class="panel is-hidden-desktop" id="resume-mobile">
+      <div class="panel-tabs">
+        <div class="dropdown">
+          <div class="dropdown-trigger">
+            <button class="button" aria-haspopup="true" aria-controls="dropdown-menu2">
+             <span class="tab-title">Summary</span>
+              <span class="icon is-small">
+                <i class="fas fa-angle-down" aria-hidden="true"></i>
+              </span>
+            </button>
+          </div>
+          <div class="dropdown-menu" id="dropdown-menu2" role="menu">
+            <div class="dropdown-content" id="dropdown-content">
+              <a class="dropdown-item is-active" href="#summary">Summary</a>
+              <a class="dropdown-item" href="#education">Education</a>
+              <a class="dropdown-item" href="#experience">Experience</a>
+              <a class="dropdown-item" href="#skills">Technical Skills</a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <!--end of columns-->
+      <div class="panel-block box is-shadowless" id="summary">
+        <p class="tile">Passionate entry-level web developer with 5+ years of customer service experience and extensive understanding of Adobe Creative and Microsoft Office Suites. Adept at implementing a responsive, user-focused design in website development. Foundational knowledge of creating and maintaining relational databases. Increased productivity by advising technological upgrades at Garrison Law Office. Simplified employee tracking with the creation and implementation of Excel spreadsheets and Microsoft Flow processes and tasks at Titan Protection & Consulting.</p>
+      </div>
+      <div class="panel-block box is-shadowless" style="display: none;" id="education">
+        <div class="tile is-ancestor">
+          <div class="tile is-vertical is-12">
+            <div class="tile">
+              <div class="tile is-parent is-vertical">
+                <article class="tile is-child">
+                  <p class="title">Certification in Full Stack Web Development</p>
+                  <p class="subtitle">University of Kansas<br>Graduating August 2020</p>
+                </article><hr>
+                <article class="tile is-child">
+                  <p class="title">Associates in General Studies</p>
+                  <p class="subtitle">Johnson County Community College<br>Graduated 2020</p>
+                </article>
+              </div>
+      </div>
+      </div>
+        </div>
+      </div>
+      <div class="panel-block box is-shadowless" style="display: none;" id="experience">
+        
+      </div>
+      <div class="panel-block box is-shadowless"  style="display: none;" id="skills">
+        <div class="columns is-vcentered">
+          <div class="column">
+            <section class="section is-flex">
+              <i class="icon fab fa-html5" title="HTML"></i>
+              <progress class="progress" value="90" max="100">90%</progress>
+            </section>
+            <section class="section is-flex">
+              <i class="icon fab fa-css3" title="CSS"></i>
+              <progress class="progress" value="90" max="100">90%</progress>
+            </section>
+            <section class="section is-flex">
+              <i class="icon fab fa-js-square" title="JavaScript"></i>
+              <progress class="progress" value="80" max="100">80%</progress>
+            </section>
+            <section class="section is-flex">
+              <i class="icon fab fa-node-js" title="Node.js"></i>
+              <progress class="progress" value="65" max="100">65%</progress>
+            </section>
+            <section class="section is-flex">
+              <i class="icon fab fa-wordpress" title="WordPress"></i>
+              <progress class="progress" value="95" max="100">95%</progress>
+            </section>
+          </div>
+          <div class="column">
+            <section class="section is-flex">
+              <i class="icon fab fa-sass" title="Sass"></i>
+              <progress class="progress" value="65" max="100">65%</progress>
+            </section>
+            <section class="section is-flex">
+              <i class="icon fab fa-git-square" title="GitHub"></i>
+              <progress class="progress" value="70" max="100">70%</progress>
+            </section>
+            <section class="section is-flex">
+              <i class="icon fab fa-php" title="php"></i>
+              <progress class="progress" value="30" max="100">30%</progress>
+            </section>
+            <section class="section is-flex">
+              <i class="icon fab fa-markdown" title="Markdown"></i>
+              <progress class="progress" value="80" max="100">80%</progress>
+            </section>
+            <section class="section is-flex">
+              <i class="icon fab fa-slack" title="Slack"></i>
+              <progress class="progress" value="80" max="100">80%</progress>
+            </section>
+          </div>
+        </div>
+                
+              </div>
+            </div>
+          
+
+    <div class="box" id="links"> 
+      <h1 class="title">Links</h1>
+      <div class="container">
+        <a class="is-flex" target="_blank" rel="noopener noreferrer" href="https://github.com/angelpsch">
+          <i class="icon fab fa-github-square is-large"></i>
+          <p class="subtitle">/angelpsch</p>
+        </a>
+        <a class="is-flex" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/angelpschultz/">
+          <i class="icon fab fa-linkedin is-large"></i>
+          <p class="subtitle">/angelpschultz</p>
+        </a>
+      
+      </div>
+     
+    </div>
+
+      
+    <!--end of content-->
       </div> 
       <!--end of wrapper-->
     <footer class="footer">
@@ -99,6 +205,8 @@
       </div>
     </div>
     </footer>
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+
           <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script> 
           <script src="./../../mybulma/js/script.js"></script>
     </body>
