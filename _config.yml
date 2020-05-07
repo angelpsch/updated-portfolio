@@ -1,2 +1,0 @@
-- name: GitHub API Request
-  uses: octokit/request-action@v2.0.0
